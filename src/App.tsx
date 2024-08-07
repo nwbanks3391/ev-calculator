@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Layout from "./components/Layout";
+
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {"Copyright © "}
+      <Link color="inherit" href="">
+        EV Calculator
+      </Link>{" "}
+      {new Date().getFullYear()}.
+    </Typography>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Box sx={{ my: 4 }}>
+        <Layout />
+        <Copyright />
+      </Box>
+    </Container>
   );
 }
 
