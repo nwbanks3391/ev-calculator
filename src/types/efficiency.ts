@@ -2,7 +2,7 @@ import { Unit } from "../constants"
 
 export interface UnitOption {
     label: string
-    value: string
+    value: Unit
 }
 
 export interface EfficiencyResult {

@@ -49,52 +49,52 @@ export const ConversionFactors = {
 
 export const ConversionFunctions = {
   [Unit.MILES_PER_KILOWATT_HOUR]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return value;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return 1.0 * value * ConversionFactors.milesToKilometers;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return (1.0 / value) * 1000.0;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return (1.0 / (value * ConversionFactors.milesToKilometers)) * 1000.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return (1.0 / value) * 100.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return (1.0 / (value * ConversionFactors.milesToKilometers)) * 100.0;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return 1.0 * value * ConversionFactors.kWhPerGallon;
     },
   },
   [Unit.KILOMETERS_PER_KILOWATT_HOUR]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return 1.0 * value * ConversionFactors.kilometersToMiles;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return value;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return (1.0 / value) * ConversionFactors.kilometersToMiles * 1000.0;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return (1.0 / value) * 1000.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return (1.0 / value) * ConversionFactors.kilometersToMiles * 100.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return (1.0 / value) * 100.0;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return (
         1.0 *
         value *
@@ -104,52 +104,52 @@ export const ConversionFunctions = {
     },
   },
   [Unit.WATT_HOURS_PER_MILE]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return (1.0 / value) * 1000.0;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return (1.0 / value) * ConversionFactors.milesToKilometers * 1000.0;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return value;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return 1.0 * value * ConversionFactors.milesToKilometers;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return value / 10.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return (value * ConversionFactors.milesToKilometers) / 10.0;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return (1.0 / value) * 1000.0 * ConversionFactors.kWhPerGallon;
     },
   },
   [Unit.WATT_HOURS_PER_KILOMETER]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return (1.0 / value) * ConversionFactors.kilometersToMiles * 1000.0;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return (1.0 / value) * 1000.0;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return value * ConversionFactors.kilometersToMiles;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return value;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return (value * ConversionFactors.kilometersToMiles) / 10.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return value / 10.0;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return (
         (1.0 / value) *
         1000.0 *
@@ -159,54 +159,54 @@ export const ConversionFunctions = {
     },
   },
   [Unit.KILOWATT_HOURS_PER_100_MILES]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return (1.0 / value) * 100.0;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return (1.0 / value) * ConversionFactors.milesToKilometers * 100.0;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return value * 10.0;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return 10.0 * value * ConversionFactors.milesToKilometers;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return value;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return value * ConversionFactors.milesToKilometers;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return (1.0 / value) * 100.0 * ConversionFactors.kWhPerGallon;
     },
   },
   [Unit.KILOWATT_HOURS_PER_100_KILOMETERS]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return (
         (1.0 / (value * ConversionFactors.kilometersToMiles * 10.0)) * 1000.0
       );
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return (1.0 / value) * 100.0;
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return value * ConversionFactors.kilometersToMiles * 10.0;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return value * 10.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return value * ConversionFactors.kilometersToMiles;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return value;
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return (
         (1.0 / (value * ConversionFactors.kilometersToMiles)) *
         1000.0 *
@@ -215,29 +215,29 @@ export const ConversionFunctions = {
     },
   },
   [Unit.MPG_EQUIVALENT]: {
-    [`get${Unit.MILES_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getmikwh: (value: number): number => {
       return value / ConversionFactors.kWhPerGallon;
     },
-    [`get${Unit.KILOMETERS_PER_KILOWATT_HOUR}`]: (value: number): number => {
+    getkmkwh: (value: number): number => {
       return (
         (value / ConversionFactors.kWhPerGallon) *
         ConversionFactors.milesToKilometers
       );
     },
-    [`get${Unit.WATT_HOURS_PER_MILE}`]: (value: number): number => {
+    getwhmi: (value: number): number => {
       return (1.0 / (value / ConversionFactors.kWhPerGallon)) * 1000.0;
     },
-    [`get${Unit.WATT_HOURS_PER_KILOMETER}`]: (value: number): number => {
+    getwhkm: (value: number): number => {
       return (
         (1.0 / (value / ConversionFactors.kWhPerGallon)) *
         1000.0 *
         ConversionFactors.milesToKilometers
       );
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_MILES}`]: (value: number): number => {
+    getkwh100mi: (value: number): number => {
       return (1.0 / (value / ConversionFactors.kWhPerGallon)) * 100.0;
     },
-    [`get${Unit.KILOWATT_HOURS_PER_100_KILOMETERS}`]: (
+    getkwh100km: (
       value: number
     ): number => {
       return (
@@ -246,7 +246,7 @@ export const ConversionFunctions = {
         ConversionFactors.milesToKilometers
       );
     },
-    [`get${Unit.MPG_EQUIVALENT}`]: (value: number): number => {
+    getmpge: (value: number): number => {
       return value;
     },
   },
