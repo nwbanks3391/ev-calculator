@@ -12,7 +12,7 @@ const Layout = () => {
       <Grid container>
         <Grid item xs={12}>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Typography variant="h3">
+            <Typography variant="h3" sx={{mb: '2rem'}}>
               Electric Vehicle Efficiency Calculator
             </Typography>
           </Box>
@@ -22,13 +22,17 @@ const Layout = () => {
               different efficiency metrics used in electric vehicles, since
               manufacturers have not standardized how efficiency is displayed.
             </Typography>
+            <Typography sx={{mt: '1rem'}}>
+              For example, a Tesla Model 3 might display its efficiency as 312 Wh/mi, while a Ford Mustang Mach-E would show the same efficiency as 3.2 mi/kWh and a Polestar 2 would show the same value as 31.25 kWh/100mi. It gets confusing, so this calculator aims to help you find the efficiency quickly in a unit you're familiar with.
+            </Typography>
             <Divider sx={{ margin: "1rem" }} />
-            <Typography sx={{ mb: '1rem' }}>
+            <Efficiency />
+            <Divider sx={{ margin: "1rem", mt: '2rem' }} />
+            <Typography sx={{ mb: '1rem', mt: '1rem' }}>
               Feel free to get in touch with any suggestions! Enhancements are
               currently in the works for globalization and performance. More
               details to come.
             </Typography>
-            <Efficiency />
           </Paper>
         </Grid>
       </Grid>
