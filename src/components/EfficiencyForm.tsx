@@ -50,7 +50,7 @@ const EfficiencyForm = ({ onClick }: EfficiencyFormProps) => {
         <Select
           label="Input Unit"
           variant="outlined"
-          sx={{ minWidth: "20rem" }}
+          sx={{ minWidth: "20rem", mb: '.5rem' }}
           onChange={(e) => formSetState(e, 'unit')}
         >
           {unitOptions.map((option: any) => {
@@ -60,7 +60,7 @@ const EfficiencyForm = ({ onClick }: EfficiencyFormProps) => {
         <InputLabel>Value</InputLabel>
         <TextField
           variant="outlined"
-          sx={{ minWidth: "20rem" }}
+          sx={{ minWidth: "20rem", mb: '.25rem' }}
           onChange={(e) => formSetState(e, 'value')}
         />
       </Box>
