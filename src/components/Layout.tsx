@@ -16,7 +16,7 @@ const Layout = () => {
               Electric Vehicle Efficiency Calculator
             </Typography>
           </Box>
-          <Paper sx={{ padding: "3rem" }}>
+          <Paper sx={{ padding: "2rem" }}>
             <Typography>
               This page was created to provide an easy way to calculate between
               different efficiency metrics used in electric vehicles, since
