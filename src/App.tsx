@@ -8,10 +8,10 @@ import Layout from "./components/Layout";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary" align="center" sx={{mt: '.5rem'}}>
       {"Copyright © "}
-      <Link color="inherit" href="">
-        EV Calculator
+      <Link color="inherit" href="https://linkedin.com/in/banksnick" >
+        Nick Banks
       </Link>{" "}
       {new Date().getFullYear()}.
     </Typography>
